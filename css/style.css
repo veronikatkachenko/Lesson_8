@@ -1,0 +1,418 @@
+@import "null.css";
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Taviraj&display=swap');
+
+@font-face {
+	font-family: "AzoftSans";
+	src: url("../fonts/azoftsans.woff2") format("woff2"), url("../fonts/azoftsans.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: "AzoftSans";
+	src: url("../fonts/azoftsansbold.woff2") format("woff2"), url("../fonts/azoftsansbold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+body{
+	font-family: Montserrat, sans-serif;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+[class*="__container"]{
+	padding: 0 15px;
+   max-width: 1170px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+/*==============Header content=================*/
+.header{
+	padding: 30px 0px 0px 0px;
+}
+.header-logo{
+text-align: center;
+margin: 0px 0px 30px 0px;
+}
+.header-logo:hover{
+	background:cadetblue;
+	border-bottom: 2px dotted #424551;
+}
+.header-menu__link{
+	color: #339474;
+	font-size: 18px;
+	font-weight: 700;
+}
+.header-menu__link:hover{
+	color:darkslategray;
+	text-decoration: underline;
+}
+.header-menu__item:not(:last-child){
+	margin-bottom: 15px;
+}
+.figma{
+	font-family: "AzoftSans";
+	background:yellow;
+	text-align: center;
+	color: navy;
+	font-size: 20px;
+	font-weight: 700;
+	border-radius: 50%;
+	padding: 15px 0px;
+}
+.figma:hover{
+	background: cornflowerblue;
+}
+.figma__link:active{
+	background: #F75E05;
+	box-shadow: 0 0px 0 0 #000,0 0px 5px 0 #000;
+}
+/*==============Main content=================*/
+.main{
+	padding: 50px 0px 0px 0px;
+}
+.block-1__title{
+	font-size: 50px;
+	font-weight: 700;
+	color: #7a2f7a;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.wrapper-info__data,
+.wrapper-info__clock{
+	font-weight: 700;
+	color: lightslategray;
+}
+.wrapper-info__data::before{
+	content: " ";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/data.svg) 0 0/ 20px no-repeat;
+}
+.wrapper-info__clock::before{
+	content: " ";
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/clock.svg) 0 0/ 20px no-repeat;
+}
+.wrapper-info{
+	margin-bottom: 20px;
+}
+.block-1 img{
+	display: block;
+	margin: 0 auto;
+	border-radius: 30px;
+	margin-bottom: 30px;
+	box-shadow: 0px 0px 15px 2px #339474;
+}
+.block-1 img:hover{
+	box-shadow: 0px 0px 35px 2px #F75E05;
+}
+.block-1__text{
+	max-width: 850px;
+	margin: 0 auto;
+	line-height: 1.6;
+	margin-bottom: 40px;
+}
+.block-1__text a{
+	font-weight: 700;
+	color: #F75E05;
+}
+.block-1__text a:hover{
+	color: #FF3F3A;
+	text-decoration: underline;
+}
+.bridges{
+	max-width: 850px;
+	margin: 0 auto;
+	line-height: 1.6;
+}
+.bridge__title{
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.bridge__text{
+	margin-bottom: 20px;
+}
+.bridge__img{
+	display: block;
+	max-width: 850px;
+	border-radius: 20px;
+	margin-bottom: 25px;
+}
+.bridge-1 h2::before{
+	content: " ";
+	width: 48px;
+	height: 43px;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/flagofiran_6502.png) 0 0/ 48px no-repeat;
+}
+.bridge-1 p:first-of-type {
+	background-color: rgb(121, 79, 69, 0.5);
+}
+.bridge-1 img:hover{
+	box-shadow: 0px 0px 35px 2px #057952;
+}
+.bridge-2 h2::before{
+	content: " ";
+	width: 48px;
+	height: 45px;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/italy_flags_flag_17018.png)
+}
+.bridge-2 p:nth-child(3) {
+	background-color: #77608d;
+}
+.bridge-2 img:hover{
+	box-shadow: 0px 0px 35px 2px #FF3F3A;
+}
+.bridge-3 h2::before{
+	content: " ";
+	width: 48px;
+	height: 31px;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/czczechrepublicflag_111857.png) no-repeat;
+}
+.bridge-3 p:nth-child(even) {
+	background-color: #59a8e9;
+}
+.bridge-3 img:hover{
+	box-shadow: 10px 0px 5px 2px #59a8e9;
+}
+.bridge-4 h2::before{
+	content: " ";
+	width: 48px;
+	height: 45px;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/hungary_flags_flag_17010.png) no-repeat;
+}
+.bridge-4 p:nth-child(3n) {
+	background-color: #189938;
+}
+.bridge-4 img:hover{
+	box-shadow: 10px 10px 5px 2px #189938;
+}
+.bridge-5 h2::after{
+	content: " ";
+	width: 48px;
+	height: 44px;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/singaporeflag_6398.png) no-repeat;
+}
+.bridge-5 img:hover{
+	box-shadow: 0 0px 15px 5px #e90e0e;
+}
+.bridge-5 p::first-line{
+	background-color: #794f45;
+}
+.bridge-6 h2::before{
+	content: " ";
+	width: 48px;
+	height: 40px;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/UnitedStates_Flag.png) no-repeat;
+}
+.bridge-6 h2:hover{
+	border-bottom: 2px solid #e90e0e;
+}
+.text-6 {
+	background-color: #77608d;
+	padding: 15px;
+}
+.bridge-6:hover .text-6 {
+	visibility: hidden;
+}
+.bridge-7 h2::before{
+	content: " ";
+	width: 48px;
+	height: 46px;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/china_18230.png) no-repeat;
+}
+.bridge-7 p:hover{
+	background-color: rgba(206, 112, 57, 0.322);
+}
+.bridge-8 h2::after{
+	content: " ";
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	margin: 0px 0px 0px 10px;
+	background: url(../img/flag-south-korea.svg) no-repeat;
+}
+.bridge-8 p::first-letter{
+	color: #7a2f7a;
+	font-size: 25px;
+	font-weight: 700;
+}
+.bridge-9 h2::after{
+	content: " ";
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	margin: 0px 0px 0px 10px;
+	background: url(../img/2361499-kingdom-uk-united_107807.png) no-repeat;
+}
+.bridge-9 p:nth-child(3):hover {
+	background-color: #d6340b77;
+}
+.bridge-10 h2::before{
+	content: " ";
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	background: url(../img/netherlands_flag.png) no-repeat;
+}
+.bridge-10:hover{
+	background:url(../img/flag-of-netherlands.jpg) 0 0 /cover no-repeat fixed
+}
+.travellizy{
+	margin-bottom: 30px;
+}
+.travellizy__link:hover{
+	background-color: #55d6ab;
+	font-size: 30px;
+	font-weight: 700;
+}
+.travellizy-submit {
+	counter-reset: item;
+}
+.travellizy-submit li::before {
+	counter-increment: item;
+	content: "(" counter(item) ")";
+	margin: 0px 10px 0px 0px;
+	color: red;
+	font-size: 20px;
+}
+.travellizy-submit a:hover{
+	text-decoration: underline;
+}
+.footer{
+	padding: 30px 0 20px 0;
+}
+.footer-social{
+	margin-bottom: 30px;
+}
+.footer-social a:not(:last-child){
+	margin-right: 15px;
+}
+.footer-social a:hover{
+	border: 2px solid#189938;
+	border-radius: 10px;
+	padding: 10px;
+}
+.footer-social a:active{
+	border: 3px solid#02200a;
+	border-radius: 10px;
+	padding: 10px;
+}
+.social{
+	max-width: 20px;
+	max-height: 20px;
+}
+.copyright a:hover{
+	color: #e90e0e;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+
+
+/*==============Figma=================*/
+.page{
+	max-width: 810px;
+	margin: 0 auto;
+}
+.block-createx{
+	font-family: Lato, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1;
+	padding: 100px 0px 0px;
+	margin: 0px 0px 50px 0px;
+}
+.block-createx__info{
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+	margin-bottom: 10px;
+}
+.block-createx__title{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 1.3;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+.block-createx__list{
+	max-width: 390px;
+}
+.block-createx__item{
+	font-size: 16px;
+	line-height: 1.6;
+	color: #424551;
+	min-height: 16px;
+	padding-left: 32px;
+}
+.block-createx__item:not(:last-child){
+	margin-bottom: 12px;
+}
+.block-createx__item::before{
+	content: " ";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin: 0px 16px 0px -32px;
+	background: url(../img/check.svg) 0 0 / 16px no-repeat;
+}
+.block-createx__list{
+	margin-bottom: 48px;
+}
+.block-createx__btn{
+	max-width: 97px;
+	padding: 12px 32px;
+	font-size: 14px;
+	font-weight: 800;
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	border-radius: 4px;
+	color: #fff;
+}
+.block-createx__btn:hover{
+	background: linear-gradient(55.95deg, #FF3F3A 100%, #F75E05 0%);
+}
+.maple{
+	font-family: Taviraj, serif;
+	font-size: 36px;
+	letter-spacing: 0.02em;
+	color: #333333;
+}
+.maple::after{
+	content: " ";
+	width: 65px;
+	display: block;
+	margin: 8px 0px 0px 0px;
+	border: 1px solid #333333;
+}
